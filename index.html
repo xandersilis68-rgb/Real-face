@@ -3,15 +3,20 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Facial Recognition Demo</title>
+  <title>Facial, Body & Hand Landmark Demo (Multi-image)</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Facial Recognition Demo (face-api.js)</h1>
-  <input type="file" id="imageUpload" accept="image/*" />
-  <div id="result"></div>
-  <canvas id="canvas"></canvas>
+  <h1>Facial, Body & Hand Landmark Demo (Multi-image)</h1>
+  <input type="file" id="imageUpload" accept="image/*" multiple />
+  <button id="detectAllBtn" disabled>Detect Landmarks (All)</button>
+  <div id="imagesContainer"></div>
   <script src="https://cdn.jsdelivr.net/npm/face-api.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-core"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-converter"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-backend-webgl"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/pose-detection"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/handpose"></script>
   <script src="script.js"></script>
 </body>
 </html>
