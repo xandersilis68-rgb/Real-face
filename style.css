@@ -4,10 +4,43 @@ body {
   padding: 2em;
   background: #f3f3f3;
 }
+.images-block {
+  display: inline-block;
+  margin: 1em;
+  vertical-align: top;
+  background: #fff;
+  border-radius: 8px;
+  padding: 1em;
+  box-shadow: 0 2px 8px #ccc;
+}
 canvas {
   margin-top: 1em;
+  max-width: 400px;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
-#result {
+img {
+  max-width: 400px;
+  display: block;
+}
+.result {
   margin-top: 1em;
   font-weight: bold;
+  font-size: 0.95em;
+}
+button {
+  margin-top: 1em;
+  padding: 0.5em 1em;
+  font-size: 1em;
+}
+.images-block button {
+  margin: 0.5em 0 0.5em 0;
+}
+.images-block {
+  position: relative;
+}
+.images-block .canvas-wrapper {
+  position: relative;
+  display: inline-block;
 }
